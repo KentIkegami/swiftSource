@@ -15,11 +15,20 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         self.title = "MainView"
         
         pageTitle = ["0. PickerView",
-                     "1. B",
-                     "2. C",
-                     "3. D",
-                     "4. E",
-                     "5. F"]
+                     "1. PickerView2",
+                     "2. PickerView3",
+                     "3. PickerView4",
+                     "4. DatePicker",
+                     "5. F",
+                     "6. G",
+                     "7. H",
+                     "8. I",
+                     "9. J",
+                     "10. K",
+                     "11. L",
+                     "12. M",
+                     "13. N",
+                     "14. O"]
 
         //TableViewの生成
         myTableView = UITableView(frame: CGRect(x: 0,
@@ -57,15 +66,34 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 0:
             second = PickerViewController()
         case 1:
-            second = PickerViewController()
+            second = PickerViewController2()
         case 2:
-            second = PickerViewController()
+            second = PickerViewController3()
         case 3:
-            second = PickerViewController()
+            second = PickerViewController4()
         case 4:
-            second = PickerViewController()
+            second = DatePickerController()
         case 5:
-            second = PickerViewController()
+            second = F()
+        case 6:
+            second = G()
+        case 7:
+            second = H()
+        case 8:
+            second = I()
+        case 9:
+            second = J()
+        case 10:
+            second = K()
+        case 11:
+            second = L()
+        case 12:
+            second = M()
+        case 13:
+            second = N()
+        case 14:
+            second = O()
+
         default:
             print("遷移先が設定されていません。")
         }
