@@ -3,7 +3,7 @@
 
 import UIKit
 
-class H: UIViewController, UIPickerViewDelegate,UITextFieldDelegate
+class H: UIViewController
 {
     override func viewDidLoad()
     {

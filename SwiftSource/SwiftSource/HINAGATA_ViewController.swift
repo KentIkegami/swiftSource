@@ -3,7 +3,7 @@
 
 import UIKit
 
-class HINAGATA_ViewController: UIViewController, UIPickerViewDelegate,UITextFieldDelegate
+class HINAGATA_ViewController: UIViewController
 {
     override func viewDidLoad()
     {

@@ -19,7 +19,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                      "2. PickerView3",
                      "3. PickerView4",
                      "4. DatePicker",
-                     "5. F",
+                     "5. PreWebView",
                      "6. G",
                      "7. H",
                      "8. I",
@@ -74,7 +74,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 4:
             second = DatePickerController()
         case 5:
-            second = F()
+            second = PreWebViewController()
         case 6:
             second = G()
         case 7:
