@@ -1,7 +1,8 @@
 //  Copyright © 2017年 池上けんと. All rights reserved.
 import UIKit
 
-class MakeButtonLogic{
+class CustomButton
+{
     
     var myButton: UIButton!
     
@@ -14,7 +15,7 @@ class MakeButtonLogic{
     var colorNT:UIColor = UIColor.hex("FFFFFF", alpha: 0.8)
     var colorHT:UIColor = UIColor.hex("25263F", alpha: 0.8)
     
-    func makeButton(px:CGFloat, py:CGFloat, st:String, ct:String, tag:Int)->UIButton{
+    func createButton(px:CGFloat, py:CGFloat, st:String, ct:String, tag:Int)->UIButton{
         
         myButton = UIButton()
         myButton.tag = tag
@@ -31,6 +32,7 @@ class MakeButtonLogic{
         myButton.setTitleColor(colorNT, for: .normal)
         myButton.setTitle(NSLocalizedString(st, comment: ct), for: .highlighted)
         myButton.setTitleColor(colorHT, for: .highlighted)
+        
         //影関係
         //myButton.layer.shadowOffset = CGSize(width: 5, height: 5)
         //myButton.layer.shadowOpacity = 0.8

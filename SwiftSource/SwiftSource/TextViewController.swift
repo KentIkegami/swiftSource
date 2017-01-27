@@ -3,13 +3,17 @@
 
 import UIKit
 
-class G: UIViewController
+class TextViewController: UIViewController
 {
     override func viewDidLoad()
     {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
-        self.title = "G"
+        self.title = "Text"
+        
+        let MakeLabelLogicInstance = CustomLabel()
+        let label = MakeLabelLogicInstance.createLabel(px: 100, py: 100, st: "aaaaaaaa aaaaa aaaaaa aa", ct: "aa", tag: 0)
+        self.view.addSubview(label)
     }
     
     override func didReceiveMemoryWarning()

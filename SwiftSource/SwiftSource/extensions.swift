@@ -22,3 +22,9 @@ extension UIColor {
         }
     }
 }
+//スクロールビューでタッチイベント検知
+extension UIScrollView {
+    open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.next?.touchesBegan(touches, with: event)
+    }
+}

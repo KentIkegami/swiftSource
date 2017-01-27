@@ -17,9 +17,9 @@ class PreWebViewController: UIViewController
         self.view.backgroundColor = UIColor.white
         self.title = "PreWebView"
     
-        let makeButtonInstance = MakeButtonLogic()
+        let makeButtonInstance = CustomButton()
         //あああ
-        let aButton = makeButtonInstance.makeButton(px: UIScreen.main.bounds.size.width/4,
+        let aButton = makeButtonInstance.createButton(px: UIScreen.main.bounds.size.width/4,
                                       py: 200,
                                       st: "yahoo",
                                       ct: "memo",
@@ -28,7 +28,7 @@ class PreWebViewController: UIViewController
         self.view.addSubview(aButton)
         
         //いいい
-        let bButton = makeButtonInstance.makeButton(px: UIScreen.main.bounds.size.width/4,
+        let bButton = makeButtonInstance.createButton(px: UIScreen.main.bounds.size.width/4,
                                                     py: 300,
                                                     st: "google",
                                                     ct: "memo",
@@ -37,7 +37,7 @@ class PreWebViewController: UIViewController
         self.view.addSubview(bButton)
         
         //ううう
-        let cButton = makeButtonInstance.makeButton(px: UIScreen.main.bounds.size.width/4,
+        let cButton = makeButtonInstance.createButton(px: UIScreen.main.bounds.size.width/4,
                                                     py: 400,
                                                     st: "infoseek",
                                                     ct: "memo",

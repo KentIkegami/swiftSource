@@ -20,12 +20,12 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                      "3. PickerView4",
                      "4. DatePicker",
                      "5. PreWebView",
-                     "6. G",
-                     "7. H",
-                     "8. I",
-                     "9. J",
-                     "10. K",
-                     "11. L",
+                     "6. Text",
+                     "7. Form",
+                     "8. FormButton",
+                     "9. FormButtonScroll",
+                     "10. Indicator",
+                     "11. MyNotification",
                      "12. M",
                      "13. N",
                      "14. O"]
@@ -76,17 +76,17 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 5:
             second = PreWebViewController()
         case 6:
-            second = G()
+            second = TextViewController()
         case 7:
-            second = H()
+            second = FormViewController()
         case 8:
-            second = I()
+            second = FormButtonViewController()
         case 9:
-            second = J()
+            second = FormButtonScrollViewController1()
         case 10:
-            second = K()
+            second = IndicatorViewController()
         case 11:
-            second = L()
+            second = MyNotificationViewController()
         case 12:
             second = M()
         case 13:
