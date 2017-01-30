@@ -21,7 +21,7 @@ class IndicatorViewController: UIViewController
                                                       st: "Indicator",
                                                       ct: "memo",
                                                       tag: 0)
-        aButton.addTarget(self, action:  #selector(onTap(sender:)), for: .touchUpInside)
+        aButton.addTarget(self, action:  #selector(switchIndicator(sender:)), for: .touchUpInside)
         
         //rightaddbutton
         let rightButton = UIBarButtonItem(image: UIImage(named: "ic_menu_add"),

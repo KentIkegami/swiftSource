@@ -25,7 +25,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                      "8. FormButton",
                      "9. FormButtonScroll",
                      "10. Indicator",
-                     "11. MyNotification",
+                     "11. AddressBook",
                      "12. M",
                      "13. N",
                      "14. O"]
@@ -86,7 +86,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 10:
             second = IndicatorViewController()
         case 11:
-            second = MyNotificationViewController()
+            second = AddressBookViewController()
         case 12:
             second = M()
         case 13:
