@@ -26,9 +26,20 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
                      "9. FormButtonScroll",
                      "10. Indicator",
                      "11. AddressBook",
-                     "12. M",
-                     "13. N",
-                     "14. O"]
+                     "12. API",
+                     "13. API2",
+                     "14. O",
+                     "15. P",
+                     "16. Q",
+                     "17. R",
+                     "18. S",
+                     "19. T",
+                     "20. U",
+                     "21. V",
+                     "22. W",
+                     "23. X",
+                     "24. Y",
+                     "25. Z"]
 
         //TableViewの生成
         myTableView = UITableView(frame: CGRect(x: 0,
@@ -88,12 +99,34 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         case 11:
             second = AddressBookViewController()
         case 12:
-            second = M()
+            second = APIViewController()
         case 13:
-            second = N()
+            second = API2ViewController()
         case 14:
             second = O()
-
+        case 15:
+            second = P()
+        case 16:
+            second = Q()
+        case 17:
+            second = R()
+        case 18:
+            second = S()
+        case 19:
+            second = T()
+        case 20:
+            second = U()
+        case 21:
+            second = V()
+        case 22:
+            second = W()
+        case 23:
+            second = X()
+        case 24:
+            second = Y()
+        case 25:
+            second = Z()
+        
         default:
             print("遷移先が設定されていません。")
         }
