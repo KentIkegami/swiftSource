@@ -1,0 +1,27 @@
+・composer導入
+
+$ curl -sS https://getcomposer.org/installer | php
+$ echo $PATH
+$ mv composer.phar /usr/local/bin/composer
+$ composer -V
+
+・Laravel導入
+composer global require "laravel/installer"
+
+・怒られたのでphp バージョンアップ
+$ brew update
+$ brew install homebrew/php/php70
+$ vim ~/.bashrc
+   export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
+$ source ~/.bashrc
+$ php -v
+
+・Laravel導入
+composer global require "laravel/installer=~1.1"
+
+https://qiita.com/u-akihiro/items/6693e1ecb1f7fda7b6fb
+
+・ftp設定
+
+・アプリケーションキーの設定
+http://www.84kure.com/blog/2015/11/17/laravel-%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%82%AD%E3%83%BCapp_key%E3%82%92%E8%A8%AD%E5%AE%9A%E3%81%99%E3%82%8B/
