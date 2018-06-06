@@ -38,7 +38,7 @@ class IndicatorViewController: UIViewController
     }
     
     
-    func switchIndicator(sender:UIButton)
+    @objc func switchIndicator(sender:UIButton)
     {
         if (self.indicator == nil)
         {

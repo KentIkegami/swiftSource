@@ -172,7 +172,7 @@ class FormButtonScrollViewController1: UIViewController,UITextFieldDelegate
                 buttonMail.isUserInteractionEnabled = true
             }
         case 1://SMS 11
-            if (textField.text?.characters.count)! < 11
+            if (textField.text?.count)! < 11
             {
                 buttonNum.alpha = 0.4
                 buttonNum.isUserInteractionEnabled = false
@@ -184,7 +184,7 @@ class FormButtonScrollViewController1: UIViewController,UITextFieldDelegate
                 flagFormSMS = true
             }
         case 2://PIN 4
-            if (textField.text?.characters.count)! < 4
+            if (textField.text?.count)! < 4
             {
                 buttonNum.alpha = 0.4
                 buttonNum.isUserInteractionEnabled = false
@@ -218,19 +218,19 @@ class FormButtonScrollViewController1: UIViewController,UITextFieldDelegate
     }
 
     // キーボード出現時
-    func keyboardWillShow(notification: NSNotification) {
+    @objc func keyboardWillShow(notification: NSNotification) {
         self.scrollView.contentOffset.y = activeTextField!.frame.origin.y-200
     }
     
     // キーボード閉じる時
-    func keyboardWillHide(notification: NSNotification) {
+    @objc func keyboardWillHide(notification: NSNotification) {
          self.scrollView.contentOffset.y = -(navigationController?.navigationBar.frame.size.height)!-20
     }
     
     /*-------------------------------------------------------------------------
      Action&Event Methods
      -------------------------------------------------------------------------*/
-    func onTap(sender: UIButton){
+    @objc func onTap(sender: UIButton){
         
         switch sender.tag {
         case 0:

@@ -35,7 +35,7 @@ class AddressBookViewController: UIViewController, CNContactPickerDelegate
         super.didReceiveMemoryWarning()
     }
     
-    func onTap(sender: UIButton)
+    @objc func onTap(sender: UIButton)
     {
        
         //連絡先アクセス

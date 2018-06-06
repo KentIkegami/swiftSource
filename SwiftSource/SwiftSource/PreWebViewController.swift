@@ -55,7 +55,7 @@ class PreWebViewController: UIViewController
         super.didReceiveMemoryWarning()
     }
     
-     func onTap(sender: UIButton){
+     @objc func onTap(sender: UIButton){
         
         let webView = WebViewController()
         

@@ -40,7 +40,7 @@ class API2ViewController: UIViewController
     
     
     //オンタップイベント
-    func onTap(sender:UIButton)
+    @objc func onTap(sender:UIButton)
     {
         //名前
         let _apiName:String = "LOGIN"

@@ -42,7 +42,7 @@ class APIViewController: UIViewController
     
     
     //オンタップイベント
-    func onTap(sender:UIButton)
+    @objc func onTap(sender:UIButton)
     {
         //インジケーターオン
         switchIndicator()

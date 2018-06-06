@@ -49,8 +49,8 @@ class DatePickerController: UIViewController, UIPickerViewDelegate,UITextFieldDe
         nowDateandTime = formatter.string(from: now as Date)
         
         //内部変数の更新
-        AselectedDate=now as Date!
-        BselectedDate=now as Date!
+        AselectedDate=now as Date?
+        BselectedDate=now as Date?
     }
     
     func makePickerBaseView(_ isA:Bool) -> UIView
@@ -143,7 +143,7 @@ class DatePickerController: UIViewController, UIPickerViewDelegate,UITextFieldDe
     }
     
     //pickerが選択時デリゲートメソッド
-    internal func onDidChangeDate(sender: UIDatePicker){
+    @objc internal func onDidChangeDate(sender: UIDatePicker){
         
         let formatter: DateFormatter = DateFormatter()
         formatter.dateFormat = "yyyy年M月d日 HH:mm"

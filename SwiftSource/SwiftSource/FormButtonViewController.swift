@@ -138,7 +138,7 @@ class FormButtonViewController: UIViewController,UITextFieldDelegate
                 buttonMail.isUserInteractionEnabled = true
             }
         case 1://SMS 11
-            if (textField.text?.characters.count)! < 11
+            if (textField.text?.count)! < 11
             {
                 buttonNum.alpha = 0.4
                 buttonNum.isUserInteractionEnabled = false
@@ -150,7 +150,7 @@ class FormButtonViewController: UIViewController,UITextFieldDelegate
                 flagFormSMS = true
             }
         case 2://PIN 4
-            if (textField.text?.characters.count)! < 4
+            if (textField.text?.count)! < 4
             {
                 buttonNum.alpha = 0.4
                 buttonNum.isUserInteractionEnabled = false
@@ -174,7 +174,7 @@ class FormButtonViewController: UIViewController,UITextFieldDelegate
         
         return true
     }
-    func onTap(sender: UIButton){
+    @objc func onTap(sender: UIButton){
         
         switch sender.tag {
         case 0:

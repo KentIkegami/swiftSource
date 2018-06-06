@@ -99,12 +99,12 @@ class FormViewController: UIViewController,UITextFieldDelegate
                 messegeLabel.textColor = UIColor.clear
             }
         case 1://SMS 11
-            if (textField.text?.characters.count)! > 11
+            if (textField.text?.count)! > 11
             {
                 textField.text = (textField.text! as NSString).substring(to: 11)
             }
         case 2://PIN 4
-            if (textField.text?.characters.count)! > 4
+            if (textField.text?.count)! > 4
             {
                 textField.text = (textField.text! as NSString).substring(to: 4)
             }
