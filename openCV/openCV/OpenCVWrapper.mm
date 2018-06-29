@@ -12,8 +12,6 @@
 #import "OpenCVWrapper.h"
 
 //Camera用
-using namespace cv;
-using namespace std;
 @interface OpenCVWrapper()<CvVideoCameraDelegate>{
     CvVideoCamera *cvCamera;
 }
@@ -50,7 +48,7 @@ using namespace std;
 //Cameraデリゲートメソッド ここにカメラ用の処理を入れる
 - (void)processImage:(cv::Mat &)image{
     //Do some OpenCV stuff with image
-    Mat image_copy;
+    cv::Mat image_copy;
     cvtColor(image, image_copy, CV_BGRA2BGR);
     
     //invert image
